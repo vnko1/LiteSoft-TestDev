@@ -1,7 +1,19 @@
+.buttons {
+  @apply flex gap-[20px];
+}
+
 .button {
-  @apply min-h-[32px] py-[4px] px-[10px] rounded-[4px]  gap-[5px] bg-liteGrey text-[12px] text-black;
+  text-transform: none;
+  @apply min-h-[32px] py-[4px] px-[10px] rounded-[4px]  gap-[5px] bg-liteGrey text-[12px] text-grey;
 
   &.current {
     @apply bg-grey text-white;
+  }
+}
+
+.btn-text {
+  @apply text-black;
+  &.current {
+    @apply text-white;
   }
 }

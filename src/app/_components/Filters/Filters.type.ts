@@ -1,5 +1,5 @@
-export type Buttons = "all" | "phones" | "accessories";
+export type ButtonsType = "All products" | "Phones" | "Accessories";
 
 export interface IFiltersProps {
-  selectedValue?: Buttons;
+  selectedValue: ButtonsType;
 }

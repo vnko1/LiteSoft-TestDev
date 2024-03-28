@@ -1,7 +1,10 @@
-import { Filters, NavBar } from "./_components";
+import { Filters, NavBar, Products } from "./_components";
+import { getData } from "./lib/data";
 import styles from "./page.module.scss";
 
-export default function Home() {
+export default async function Home() {
+  const data = await getData();
+
   return (
     <section className={styles["wrapper"]}>
       <div className={styles["container"]}>
@@ -10,7 +13,11 @@ export default function Home() {
         </div>
         <div></div>
         <div className={styles["filters"]}>
-          <Filters />
+          <Filters selectedValue='All products' />
+        </div>
+        <div></div>
+        <div>
+          <Products products={data} />
         </div>
       </div>
     </section>
