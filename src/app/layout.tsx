@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import styles from "./home.module.scss";
 import "@/styles/globals.scss";
-import { Filters, NavBar } from "./_components";
+import { Filters, NavBar, NavButtons } from "./_components";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -36,6 +36,9 @@ export default function RootLayout({
               />
             </div>
             {children}
+            <div className={styles["bottom-nav"]}>
+              <NavButtons />
+            </div>
           </div>
         </main>
       </body>

@@ -9,8 +9,10 @@ export default async function Home({
 }) {
   const data = await getData();
   return (
-    <section>
-      <Products products={data} />
+    <section className={styles["home"]}>
+      <div className={styles["home__wrapper"]}>
+        <Products products={data} />
+      </div>
     </section>
   );
 }

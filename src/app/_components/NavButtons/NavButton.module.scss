@@ -1,0 +1,23 @@
+.buttons {
+  @apply flex justify-between;
+}
+
+.text-button {
+  text-transform: none;
+  @apply flex items-center text-accent text-[12px];
+}
+
+.cards-button {
+  @apply flex gap-[20px];
+}
+.button {
+  text-transform: none;
+  @apply w-[300px] h-[36px] text-[12px] rounded-[4px];
+
+  &.outlined {
+    @apply border-accent bg-white text-accent;
+  }
+  &.contained {
+    @apply bg-accent text-white;
+  }
+}

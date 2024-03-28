@@ -13,3 +13,13 @@
 .filters {
   @apply mb-[20px];
 }
+
+.home {
+  @apply mb-[20px];
+  &__wrapper {
+    @apply max-h-[500px] overflow-hidden overflow-y-auto;
+  }
+}
+
+// .nav-buttons {
+// }
