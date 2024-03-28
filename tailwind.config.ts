@@ -14,6 +14,7 @@ const config: Config = {
         accent: "#405EFF",
         black: "#303031",
         grey: "#B2BAC7",
+        liteGrey: "#E9EBEF",
       },
       fontFamily: {
         roboto: ["var(--font-roboto)"],

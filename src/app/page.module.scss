@@ -3,9 +3,13 @@
 }
 
 .container {
-  @apply mx-auto w-full max-w-[1440px] px-[30px];
+  @apply mx-auto w-full px-[30px];
 }
 
 .breadcrumbs {
+  @apply mb-[20px];
+}
+
+.filters {
   @apply mb-[20px];
 }

@@ -1,0 +1,7 @@
+.button {
+  @apply min-h-[32px] py-[4px] px-[10px] rounded-[4px]  gap-[5px] bg-liteGrey text-[12px] text-black;
+
+  &.current {
+    @apply bg-grey text-white;
+  }
+}
