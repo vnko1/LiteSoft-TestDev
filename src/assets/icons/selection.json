@@ -1,0 +1,77 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M189.85 66.242c-7.161-7.179-16.292-12.070-26.236-14.053s-20.253-0.969-29.619 2.914c-9.368 3.883-17.37 10.459-22.995 18.896s-8.618 18.353-8.6 28.493v734.414c0.002 10.13 3.010 20.034 8.643 28.454 5.632 8.421 13.637 14.982 22.999 18.852s19.663 4.875 29.598 2.889c9.934-1.987 19.056-6.875 26.21-14.047l367.104-367.104c4.768-4.756 8.551-10.407 11.132-16.627 2.582-6.221 3.91-12.889 3.91-19.624 0-6.734-1.328-13.402-3.91-19.623-2.58-6.22-6.364-11.87-11.132-16.627l-367.104-367.206z"
+        ],
+        "attrs": [
+          {
+            "fill": "none",
+            "stroke": "rgb(64, 94, 255)",
+            "strokeLinejoin": "miter",
+            "strokeLinecap": "butt",
+            "strokeMiterlimit": "4",
+            "strokeWidth": 102.4
+          }
+        ],
+        "width": 717,
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": ["triangle"]
+      },
+      "attrs": [
+        {
+          "fill": "none",
+          "stroke": "rgb(64, 94, 255)",
+          "strokeLinejoin": "miter",
+          "strokeLinecap": "butt",
+          "strokeMiterlimit": "4",
+          "strokeWidth": 102.4
+        }
+      ],
+      "properties": {
+        "order": 4,
+        "id": 0,
+        "name": "triangle",
+        "prevSize": 32
+      },
+      "setIdx": 1,
+      "setId": 2,
+      "iconIdx": 0
+    }
+  ],
+  "height": 1024,
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "icomoon"
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon",
+      "name": "icomoon"
+    },
+    "historySize": 50,
+    "showCodes": true,
+    "gridSize": 16
+  }
+}

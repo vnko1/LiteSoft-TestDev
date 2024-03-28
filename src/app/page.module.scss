@@ -1,0 +1,11 @@
+.wrapper {
+  @apply pt-[52px] pb-[72px];
+}
+
+.container {
+  @apply mx-auto w-full max-w-[1440px] px-[30px];
+}
+
+.breadcrumbs {
+  @apply mb-[20px];
+}

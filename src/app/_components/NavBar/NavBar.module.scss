@@ -1,0 +1,17 @@
+.breadcrumbs {
+  @apply mb-[10px];
+  & > ol {
+    @apply flex gap-[14px];
+  }
+  &__link {
+    @apply text-[12px] font-roboto text-black;
+  }
+}
+
+.title {
+  @apply text-[24px] font-bold mb-[10px];
+}
+
+.text {
+  @apply text-grey text-[12px];
+}
