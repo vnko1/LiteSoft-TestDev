@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       screens: { sm: "375px", md: "768px", base: "1440px" },
       colors: {
-        primaryBg: "#F6F7F9",
+        primaryBg: "#D9D9D9",
         accent: "#405EFF",
         black: "#303031",
         grey: "#B2BAC7",

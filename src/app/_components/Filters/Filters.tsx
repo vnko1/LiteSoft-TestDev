@@ -5,26 +5,42 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import styles from "./Filters.module.scss";
 import { Button } from "@/components";
 
-const buttons = ["All products", "Phones", "Accessories"];
+const Filters: FC<IFiltersProps> = ({
+  selectedValue,
+  buttons = [],
+}) => {
+  const [buttonsValue, setButtonsValue] = useState(buttons);
+  const onHandleFilterButtonClick = (buttonValue: string) => {
+    setButtonsValue((buttons) =>
+      buttons.filter((el) => el !== buttonValue)
+    );
+  };
 
-const Filters: FC<IFiltersProps> = ({ selectedValue }) => {
   return (
     <div className={styles["buttons"]}>
-      {buttons.map((button) => (
-        <Button
-          key={button}
-          className={`${styles["button"]} ${
-            button === selectedValue ? styles["current"] : ""
-          }`}
-          endIcon={<DeleteIcon sx={{ width: 24, height: 24 }} />}>
-          <span
-            className={`${styles["btn-text"]} ${
-              button === selectedValue ? styles["current"] : ""
-            }`}>
-            {button}
-          </span>
-        </Button>
-      ))}
+      <div className={styles["buttons__filters"]}>
+        {buttonsValue.map((button) => (
+          <Button
+            onClick={() => onHandleFilterButtonClick(button)}
+            key={button}
+            className={`${styles["button"]} ${
+              styles["button__filter"]
+            } ${button === selectedValue ? styles["current"] : ""}`}
+            endIcon={<DeleteIcon sx={{ width: 24, height: 24 }} />}>
+            <span
+              className={`${styles["btn-text"]} ${
+                button === selectedValue ? styles["current"] : ""
+              }`}>
+              {button}
+            </span>
+          </Button>
+        ))}
+      </div>
+      <Button
+        variant='outlined'
+        className={`${styles["button"]} ${styles["button__add"]}`}>
+        New category
+      </Button>
     </div>
   );
 };

@@ -1,13 +1,24 @@
 .buttons {
-  @apply flex gap-[20px];
+  @apply flex justify-between;
+
+  &__filters {
+    @apply flex gap-[20px];
+  }
 }
 
 .button {
+  @apply min-h-[32px] py-[4px] px-[10px] rounded-[4px];
   text-transform: none;
-  @apply min-h-[32px] py-[4px] px-[10px] rounded-[4px]  gap-[5px] bg-liteGrey text-[12px] text-grey;
 
-  &.current {
-    @apply bg-grey text-white;
+  &__filter {
+    @apply gap-[5px] bg-liteGrey text-[12px] text-grey;
+
+    &.current {
+      @apply bg-grey text-white;
+    }
+  }
+  &__add {
+    @apply w-full max-w-[200px] border-accent bg-white text-accent;
   }
 }
 

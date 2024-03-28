@@ -3,10 +3,10 @@
 }
 
 .container {
-  @apply mx-auto w-full px-[30px];
+  @apply mx-auto px-[30px] max-w-[1440px] w-full;
 }
 
-.breadcrumbs {
+.nav {
   @apply mb-[20px];
 }
 

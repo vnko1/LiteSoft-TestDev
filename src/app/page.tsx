@@ -1,25 +1,16 @@
-import { Filters, NavBar, Products } from "./_components";
+import { Products } from "./_components";
+import styles from "./home.module.scss";
 import { getData } from "./lib/data";
-import styles from "./page.module.scss";
 
-export default async function Home() {
+export default async function Home({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   const data = await getData();
-
   return (
-    <section className={styles["wrapper"]}>
-      <div className={styles["container"]}>
-        <div className={styles["breadcrumbs"]}>
-          <NavBar />
-        </div>
-        <div></div>
-        <div className={styles["filters"]}>
-          <Filters selectedValue='All products' />
-        </div>
-        <div></div>
-        <div>
-          <Products products={data} />
-        </div>
-      </div>
+    <section>
+      <Products products={data} />
     </section>
   );
 }
