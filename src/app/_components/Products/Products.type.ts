@@ -1,3 +1,12 @@
-import { IData } from "@/app/lib/data.type";
+import { Data } from "@/app/lib/data.type";
 
-export interface IProductsProps extends IData {}
+export interface IProductsProps {
+  products: Data;
+}
+
+export interface IColumn {
+  id: "photo" | "productCode" | "name" | "stock" | "qty" | "price";
+  label: string;
+  minWidth?: number;
+  align?: "right" | "left" | "center";
+}
