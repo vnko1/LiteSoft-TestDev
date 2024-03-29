@@ -5,7 +5,7 @@ export interface IProductsProps {
 }
 
 export interface IColumn {
-  id: "photo" | "productCode" | "name" | "stock" | "qty" | "price";
+  id: "imageUrl" | "productCode" | "name" | "stock" | "qty" | "price";
   label: string;
   minWidth?: number;
   align?: "right" | "left" | "center";

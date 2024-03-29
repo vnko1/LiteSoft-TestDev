@@ -1,8 +1,9 @@
 export type Data = Array<{
   productCode: number;
   stock: string;
+  price: { euro: number; dollar: number };
   quantity: number;
-  euroPrice: number;
-  dollarPrice: number;
   favorite: boolean;
+  imageUrl: string;
+  name: string;
 }>;

@@ -1,3 +1,7 @@
 .products {
   @apply w-full overflow-hidden;
+
+  &__table {
+    @apply max-h-[440px];
+  }
 }

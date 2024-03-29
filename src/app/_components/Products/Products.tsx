@@ -7,13 +7,14 @@ import {
   TableContainer,
   TableHead,
   TableRow,
+  Switch,
 } from "@mui/material";
 import { IColumn, IProductsProps } from "./Products.type";
 import styles from "./Product.module.scss";
 import { Data } from "@/app/lib/data.type";
 
 const columns: IColumn[] = [
-  { id: "photo", label: "Photo", minWidth: 100, align: "center" },
+  { id: "imageUrl", label: "Photo", minWidth: 100, align: "center" },
   { id: "productCode", label: "Product code", minWidth: 80 },
   { id: "name", label: "Name", minWidth: 542, align: "left" },
   { id: "stock", label: "Stock", minWidth: 80 },
@@ -29,19 +30,13 @@ const Products: FC<IProductsProps> = ({ products }) => {
   }, [products]);
 
   return (
-    <div className={styles["products"]} suppressHydrationWarning>
-      <TableContainer
-        sx={{ maxHeight: 440 }}
-        suppressHydrationWarning>
-        <Table
-          stickyHeader
-          aria-label='sticky table'
-          suppressHydrationWarning>
-          <TableHead suppressHydrationWarning>
-            <TableRow suppressHydrationWarning>
+    <div className={styles["products"]}>
+      <TableContainer className={styles["products__table"]}>
+        <Table stickyHeader aria-label='sticky table'>
+          <TableHead>
+            <TableRow>
               {columns.map((el) => (
                 <TableCell
-                  suppressHydrationWarning
                   key={el.id}
                   align={el.align}
                   style={{
@@ -51,16 +46,18 @@ const Products: FC<IProductsProps> = ({ products }) => {
                 </TableCell>
               ))}
               <TableCell
-                suppressHydrationWarning
                 style={{
                   minWidth: 95,
                   display: "flex",
                   justifyContent: "space-between",
+                  justifyItems: "center",
                 }}>
-                Image
+                <Switch />
+                <span style={{ paddingTop: "6px" }}>Switch</span>
               </TableCell>
             </TableRow>
           </TableHead>
+          <TableBody></TableBody>
         </Table>
       </TableContainer>
     </div>
