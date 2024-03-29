@@ -1,7 +1,7 @@
 import { Data } from "@/app/lib/data.type";
 
 export interface IProductsProps {
-  products: Data;
+  products: Data[];
 }
 
 export interface IColumn {
